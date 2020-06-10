@@ -7,29 +7,6 @@ burger.onclick = function() {
 
 //////////////////////////////////////////////////////////
 
-/*let contents = document.querySelectorAll('.list__content');
-let arrows = document.querySelectorAll('.arrow');
-let headers = document.querySelectorAll('.list__header');
-
-
-for (let i = 0; i < contents.length; i++) {
-	headers[i].onclick = function() {
-		let active = document.querySelectorAll('.active');
-		if (active.length > 0) {
-		removeClass(contents, arrows);
-	}
-		contents[i].classList.toggle('active');
-		arrows[i].classList.toggle('reverse');
-	};
-};
-
- function removeClass(contents, arrows) {
- 	for (let i = 0; i < contents.length; i++) {
- 		contents[i].classList.remove('active');
- 		arrows[i].classList.remove('reverse');
- 	};
- };
-*/
 
 $(document).ready(function(){
 	$('.list__content').slideUp(0);
