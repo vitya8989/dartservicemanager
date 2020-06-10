@@ -1137,7 +1137,7 @@ body {
 .contact {
   background: #fafafa;
   min-height: 660px;
-  padding: 44px 0 0 0; }
+  padding: 44px 0 25px 0; }
   .contact__content {
     max-width: 600px;
     margin: 0 auto;
@@ -1283,7 +1283,7 @@ body {
     color: #ffffff;
     font-weight: 600;
     line-height: 25px;
-    font-size: calc(11px + 4 * ((100vw - 320px) / 1280)); }
+    font-size: 15px; }
   .nav__list li a:hover {
     color: #1de9b6; }
 
@@ -1363,6 +1363,8 @@ body {
     display: none; }
   .nav__list {
     min-width: 280px; }
+  .nav__list li a {
+    font-size: 14px;}
   .copyright__link {
     opacity: 0.5;
     color: #ffffff;
