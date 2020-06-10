@@ -76,3 +76,11 @@ $(document).ready(function(){
 	});
 });
 
+let video = document.querySelector('.video');
+video.onclick = function() {
+	 if (video.paused) {
+	video.play();
+	} else {
+	video.pause();
+	}
+}
