@@ -1,0 +1,101 @@
+let burger = document.querySelector('.header__burger');
+let nav = document.querySelector('.header__nav');
+burger.onclick = function() {
+	burger.classList.toggle('open');
+	nav.classList.toggle('open');
+}
+
+//////////////////////////////////////////////////////////
+
+/*let contents = document.querySelectorAll('.list__content');
+let arrows = document.querySelectorAll('.arrow');
+let headers = document.querySelectorAll('.list__header');
+
+
+for (let i = 0; i < contents.length; i++) {
+	headers[i].onclick = function() {
+		let active = document.querySelectorAll('.active');
+		if (active.length > 0) {
+		removeClass(contents, arrows);
+	}
+		contents[i].classList.toggle('active');
+		arrows[i].classList.toggle('reverse');
+	};
+};
+
+ function removeClass(contents, arrows) {
+ 	for (let i = 0; i < contents.length; i++) {
+ 		contents[i].classList.remove('active');
+ 		arrows[i].classList.remove('reverse');
+ 	};
+ };
+*/
+
+$(document).ready(function(){
+	$('.list__content').slideUp(0);
+	$('.list__header').click(function(event) {
+		if($('.list').hasClass('one')){
+			$('.list__content').not($(this).next()).slideUp(300);
+			$('.arrow').not($(this).children()).removeClass('reverse');
+		}
+		$(this).next().slideToggle(300);
+		$(this).children('.arrow').toggleClass('reverse');
+	});
+});
+
+
+//////////////////////////////////////////////////////////////
+
+$(document).ready(function(){
+	$('.slider').slick({
+		lazyLoad: 'ondemand',
+		speed:1000,
+		pauseOnFocus:true,
+		pauseOnHover:true,
+		autoplay:true,
+		autoplaySpeed:4000,
+		slidesToShow:2,
+		vertical:true,
+		verticalSwiping:false,
+		responsive:[
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
+});
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+$(document).ready(function(){
+	$('.slider-team').slick({
+		speed:1000,
+		slidesToShow:3,
+		centerMode:true,
+		centerPadding: '40px',
+		initialSlide:1,
+		lazyLoad: 'ondemand',
+		asNavFor:".our__review-slider",
+		responsive:[
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow:1,
+				
+				}
+			}
+		]
+	});
+	$('.our__review-slider').slick({
+		speed:1000,
+		slidesToShow:1,
+		initialSlide:1,
+		asNavFor:".slider-team",
+	});
+});
+
