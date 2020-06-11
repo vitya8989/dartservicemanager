@@ -1122,11 +1122,11 @@ body {
   .slider-team .slick-arrow.slick-prev::before {
     top: 36%;
     left: 45px;
-    background: url("../../img/icon/arrowbgl.webp") 0 0/cover no-repeat; }
+    background: url("../img/icon/arrowbgl.webp") 0 0/cover no-repeat; }
   .slider-team .slick-arrow.slick-next::before {
     top: 36%;
     right: 45px;
-    background: url("../../img/icon/arrowbgr.webp") 0 0/cover no-repeat; }
+    background: url("../img/icon/arrowbgr.webp") 0 0/cover no-repeat; }
 }
 
 @media (max-width: 470px) {
