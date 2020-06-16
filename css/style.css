@@ -373,7 +373,7 @@ body {
     height: 320.0px;
     border-radius: 10px;
     background: #ffffff;
-    border: 10px solid #061e37;
+    border: 10px solid #ffffff;
     cursor: pointer;}
     .header__video video {
       width: 100%;
@@ -651,7 +651,7 @@ body {
 
 .servises {
   background-color: #ffffff;
-  min-height: 870px;
+  min-height: 730px;
   padding: 95px 0 79px 0; }
   .servises__content {
     max-width: 800px;
@@ -756,6 +756,7 @@ body {
   .list__text p:first-child {
     margin: 0 0 15px 0; }
   .servises {
+    min-height: 650px;
     padding: 50px 0; } }
 
 @media (max-width: 630px) {
