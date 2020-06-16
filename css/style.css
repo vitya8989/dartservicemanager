@@ -394,7 +394,7 @@ body {
         height: 266.66667px; } }
     @media (max-width: 967px) {
       .header__video {
-        border: 7px solid #061e37;
+        border: 7px solid #ffffff;
         margin-bottom: 35px;
         min-width: calc(280px + 520 * ((100vw - 320px) / 647));
         height: calc((280px + 420 * ((100vw - 320px) / 647)) * 0.533333333); } }
